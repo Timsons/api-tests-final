@@ -13,5 +13,5 @@ pipeline {
 
 def buildImage(){
     sh "docker build -t tsnetkovs/api-tests:latest ."
-    sh "docker push tsnetkovs/api-tests"
+    sh "docker push tsnetkovs/api-tests:latest"
 }
